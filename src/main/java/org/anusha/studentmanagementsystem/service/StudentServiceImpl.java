@@ -13,10 +13,6 @@ public class StudentServiceImpl implements StudentService{
     @Autowired
     private StudentRepository studentRepository;
 
-//    public StudentServiceImpl(StudentRepository studentRepository) {
-//        this.studentRepository = studentRepository;
-//    }
-
     @Override
     public List<Student> getAllStudents() {
         return studentRepository.findAll();

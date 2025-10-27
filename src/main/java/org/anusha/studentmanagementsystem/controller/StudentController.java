@@ -18,11 +18,6 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-//    public StudentController(StudentService studentService) {
-//        super();
-//        this.studentService = studentService;
-//    }
-
     //handler method to handle list students and return model and view
     @GetMapping("/students")
     public String listStudents(Model model){
